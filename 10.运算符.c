@@ -132,8 +132,8 @@ int main(int argc, char const *argv[])
 			1^0=1,1^1=0	1异或任何数，其结果=任何数取反
 			x^x=0	任何数异或自己，等于把自己置0
 	 */
-	a = 60;
-	b = 13;
+	a = 60;		//00111100
+	b = 13;		//00001101
 	c = 0;
 
 	c = a & b;       /* 12 = 0000 1100 */ 
@@ -157,8 +157,69 @@ int main(int argc, char const *argv[])
 	/*
 	assignment operator
 	 */
+	a = 21;
+	c = 0;
+	c =  a;
+	printf("\n");
+	printf("Line 1 - =  运算符实例，c 的值 = %d\n", c );
+
+	c +=  a;
+	printf("Line 2 - += 运算符实例，c 的值 = %d\n", c );
+
+	c -=  a;
+	printf("Line 3 - -= 运算符实例，c 的值 = %d\n", c );
+
+	c *=  a;
+	printf("Line 4 - *= 运算符实例，c 的值 = %d\n", c );
+
+	c /=  a;
+	printf("Line 5 - /= 运算符实例，c 的值 = %d\n", c );
+
+	c  = 200;
+	c %=  a;
+	printf("Line 6 - = 运算符实例，c 的值 = %d\n", c );
+
+	c <<=  2;
+	printf("Line 7 - <<= 运算符实例，c 的值 = %d\n", c );
+
+	c >>=  2;
+	printf("Line 8 - >>= 运算符实例，c 的值 = %d\n", c );
+
+	c &=  2;
+	printf("Line 9 - &= 运算符实例，c 的值 = %d\n", c );
+
+	c ^=  2;
+	printf("Line 10 - ^= 运算符实例，c 的值 = %d\n", c );
+
+	c |=  2;
+	printf("Line 11 - |= 运算符实例，c 的值 = %d\n", c );
+
+	/*
+	other operator
+		sizeof()： get size of variable
+		&: return address of variable
+		*: point to a variable
+		?: ：express
+	 */
 	
-	
+	int e = 4;
+	short f;
+	double g;
+	int * ptr;
+
+	// sizeof
+	printf("变量e的大小=%lu\n", sizeof(e));
+	printf("变量f的大小=%lu\n", sizeof(f));
+	printf("变量g的大小=%lu\n", sizeof(g));
+
+	// * and & 
+	ptr = &e;
+	printf("e 的值是%d\n", e);
+	printf("*ptr 是%d\n", *ptr);
+
+
+
+
 
 	return 0;
 }
