@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
 1. Enumeration definition
@@ -44,7 +45,7 @@
  */
 
 enum DAY {
-	MON=1, TUE, WED, THU, FRI, SAT, SUN
+	MON=1, TUE, WED, THU=10, FRI, SAT, SUN
 } day;
 
 enum color {
@@ -53,6 +54,7 @@ enum color {
 
 void print_enum();
 void print_enum_switch();
+void convert_integer_enumeration();
 
 int main(int argc, char const *argv[])
 {
@@ -63,6 +65,7 @@ int main(int argc, char const *argv[])
 
 	print_enum();
 	print_enum_switch();
+	convert_integer_enumeration();
 
 	return 0;
 }
@@ -88,10 +91,12 @@ void print_enum_switch ()
 {
 	enum color favorite_color;
 
-	printf("请输入你喜欢的颜色: (1. red, 2. green, 3. blue): \n");
+	// printf("请输入你喜欢的颜色: (1. red, 2. green, 3. blue): \n");
 
-	scanf("%d", &favorite_color);
+	// scanf("%d", &favorite_color);
 	
+	favorite_color = red;
+
 	switch (favorite_color)
     {
 	    case red:
@@ -108,6 +113,27 @@ void print_enum_switch ()
     }
 
 }
+
+void convert_integer_enumeration() {
+	enum day {
+		saturday,
+        sunday,
+        monday,
+        tuesday,
+        wednesday,
+        thursday,
+        friday
+	} workday;
+
+	int a = 1;
+	enum day weekend;
+	// weekend = (enum day) a;  // convert type
+	weekend = a;	// it is wrong
+	printf("weekend: %d \n", weekend);
+}
+
+
+
 
 
 
