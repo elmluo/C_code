@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/yytd/luochao/github_lc/c_code/c_review/3.数据类型的本质/main.c" "/Users/yytd/luochao/github_lc/c_code/c_review/3.数据类型的本质/cmake-build-debug/CMakeFiles/3_.dir/main.c.o"
+  "/Users/luochao/c_code/c_review/3.数据类型的本质/main.c" "/Users/luochao/c_code/c_review/3.数据类型的本质/cmake-build-debug/CMakeFiles/3_.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
