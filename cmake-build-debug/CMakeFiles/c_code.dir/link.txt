@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/c_code.dir/c_basic_knowledge/23.输入输出.c.o  -o c_code 

@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
 	/*
 	type of float
 	 */
-	printf("float 存储最大字节数 : %d \n", sizeof(float) );
+	printf("float 存储最大字节数 : %lu \n", sizeof(float) );
 	printf("float 最大值: %E\n", FLT_MAX );
 	printf("float 最小值: %e\n", FLT_MIN);
 	printf("精度值: %d\n", FLT_DIG);

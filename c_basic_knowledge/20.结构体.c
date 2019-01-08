@@ -60,13 +60,13 @@ struct NODE {
 4. tow structures contain each other,
 	 an incomplete declaration of one of these structures is required;
  */
-struct B
+struct B;
 struct A {
 	struct B *partner;
 };
 struct B {
 	struct A *partner;
-}
+};
 
 int main(int argc, char const *argv[])
 {

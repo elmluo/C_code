@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="c_demo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\c_demo\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="c_demo">
+				<Option output="/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/c_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 c_demo"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="c_demo/fast">
+				<Option output="/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/c_demo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 c_demo/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/c_demo/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/yytd/luochao/github_lc/c_code/c_demo/main.c">
+			<Option target="c_demo"/>
+		</Unit>
+		<Unit filename="/Users/yytd/luochao/github_lc/c_code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/yytd/luochao/github_lc/c_code/c_demo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\c_demo\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

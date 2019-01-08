@@ -19,8 +19,7 @@ int getNextRandomValue(void)
     return rand();
 }
 
-int main(int argc, char co nst *argv[])
-{
+int main(int argc, char const *argv[]){
 	/*
 	function pointer  used like normal functions。 
 	 */

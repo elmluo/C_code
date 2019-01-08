@@ -1,0 +1,3 @@
+/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/yytd/luochao/github_lc/c_code/cmake-build-debug/CMakeFiles/c_code.dir

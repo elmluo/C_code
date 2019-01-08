@@ -11,6 +11,17 @@
 		r+
 		w+
 		a+
+
+	two-step
+		rb
+		wb
+		ab
+		rb+
+		r+b
+		wb+
+		w+b
+		ab+
+		a+b
  */
 
 /*
@@ -24,6 +35,7 @@
 	int fputs(const char * s, FILE * fp);
 	write string into fp
  */
+
 void my_fputs() {
 	FILE * fp = NULL;
 	fp = fopen("/tmp/test.txt", "w+");

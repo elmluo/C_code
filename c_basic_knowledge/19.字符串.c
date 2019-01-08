@@ -17,8 +17,8 @@ int main(int argc, char const *argv[])
 
 void print_str() 
 {
-	char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
-	// char greeting[] = "Hello";
+	// char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+	char greeting[] = "Hello";
 	printf("Greeting message: %s\n", greeting);
 }
 
@@ -27,7 +27,7 @@ void print_str()
 	strcpy(s1, s2)  copy s2 to s1;
 	strcat(s1, s2)  connect sw to the end of s1;
 	strlen(s1, s2)  return s1's length;
-	strcmp(s1, s2)  return compare s1 and s2, the type is boolean;
+	strcmp(s1, s2)  return compare s1 and s2, the return type is boolean;
 	strchr(s1, ch)  return a pointer which points the first position, ch in s1;
 	strstr(s1, ch)  return a pointer which points the first position, str in s1;
  */
