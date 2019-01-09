@@ -35,13 +35,17 @@ int main(void) {
     *p = 50;
     printf("p: %p \n", p);
 
+    // int --- 4
+    // double --- 8
+    // char --- 1
+    // 数组的数据类型可以假想成 （int[10]） --- 40
     int arr[5] = {1, 2};  // 定义一个数组。
     printf("sizeof(arr)=%d \n", sizeof(arr));   // 求int arr[10] 数据类型的大小
     printf("sizeof(arr[0])=%d \n", sizeof(arr[0])); // 求int数据类型的大小
 
     printf("arr: %p \n", arr);  // 数组名arr，是首元素地址，首元素是int类型，arr的数据类型是int*, + 1 的跨度为4个字节
     printf("arr + 1: %p \n", arr + 1);
-    printf("&arr: %p \n", &arr);
+    printf("&arr: %p \n", &arr);  // 数组（arr[10]）的地址, 可以假想成 &arr ->(int[10])*
     printf("&arr + 1: %p \n", &arr + 1);
 
     return 0;
