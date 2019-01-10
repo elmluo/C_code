@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/luochao/c_code/c_review/3.数据类型的本质
+CMAKE_SOURCE_DIR = /Users/yytd/luochao/github_lc/c_code/c_review/3.数据类型的本质
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/luochao/c_code/c_review/3.数据类型的本质/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/yytd/luochao/github_lc/c_code/c_review/3.数据类型的本质/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/luochao/c_code/c_review/3.数据类型的本质/cmake-build-debug/CMakeFiles /Users/luochao/c_code/c_review/3.数据类型的本质/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yytd/luochao/github_lc/c_code/c_review/3.数据类型的本质/cmake-build-debug/CMakeFiles /Users/yytd/luochao/github_lc/c_code/c_review/3.数据类型的本质/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/luochao/c_code/c_review/3.数据类型的本质/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yytd/luochao/github_lc/c_code/c_review/3.数据类型的本质/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
