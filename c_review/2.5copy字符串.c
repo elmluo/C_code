@@ -36,19 +36,18 @@ int str_copy4(char *dst, char *src)
 	return 0;
 }
 
-int str_copy5(/*out*/char *dst, /*in*/ const char *src)
+int str_copy5(/*out*/char *dst, /*in*/ char *src)
 {	
 	char *temp_dst = NULL;
 	char *temp_src = NULL;
 	int retn = 0;
-	goto END;
 	// judge parameters legal
 	if (dst == NULL || src == NULL) {
 		fprintf(stderr, "%s\n", "dst == NULL || src == NULL");
 		retn = -1;
+		goto END;
 	}
-
-	for (temp_dst = dst, temp_src = src; (*temp_dst++ = *temp_src++);)
+	for (temp_dst = dst, temp_src = src; (*temp_dst++ = *temp_src++)!='\0';)
 	{
 
 	}
@@ -62,7 +61,8 @@ int main(int argc, char const *argv[])
 {
 	char *str = "123456789";
 	char dst[128] = {0};
-	str_copy5(dst, str);
+	str_copy5(dst, NULL);
+	// printf("str=[%s]\n", str);
 	printf("%s\n", dst);
 	return 0;
 }
