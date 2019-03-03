@@ -25,6 +25,7 @@ int reverse(char *str) {
 
 /**
  * use recursion
+ * 	
  * @param  str [description]
  * @return     [description]
  */
@@ -34,11 +35,11 @@ int reverse1(char *str) {
 	}
 	if(*str == '\0') {
 		return 0;
-	}
-	// printf("%c\n",*str ); // 先打印，再出栈, 打印的是当前函数的str。
-	reverse1(str + 1);	// bcdef12345。
-	// printf("%c", *str); // 先出栈，后打印, 打印的是str + 1。已经改变后的结果。
-	strncat(g_buf, str, 1);
+	} 
+	// printf("1111 %p\n", str ); 
+	reverse1(str + 1 );// bcdef12345。
+	// printf("1111 %p\n", str);
+	// strncat(g_buf, str, 1);
 	return 0;
 }
 
@@ -58,13 +59,13 @@ int reverse2(/*IN*/char *str, /*OUT*/char *outbuf) {
 int main(int argc, char const *argv[])
 {
 	// char *str = "abcdef" // wrong , variable of global area, can't be modify
-	char str[] = "abcdef12345"; 
+	char str[] = "012345679"; // 
 	char buf[128] = {0};
 	reverse1(str);
-	reverse2(str, buf);
+	// reverse2(str, buf);
 	printf("\n");
-	printf("reverse result1 is : %s\n", g_buf);
-	printf("reverse2 result is: %s\n", buf);
+	// printf("reverse result1 is : %s\n", g_buf);
+	// printf("reverse2 result is: %s\n", buf);
 	return 0;
 }
 
