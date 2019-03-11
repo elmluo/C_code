@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+
+void to_binary(unsigned long n);
+
+int main(int argc, char const *argv[])
+{
+	
+	unsigned long number;
+	printf("Enter an integer (q to quit) \n");
+	while(scanf("%lu", &number) == 1) {
+	    printf("%s\n", "Binary equivalent: ");
+	    to_binary(number);
+	    putchar('\n');
+	    printf("%s\n", "Enter an integer (q to quit)");
+	}
+	return 0;
+}
+
+/**
+ * 递归实现10进制转二进制
+ */
+void to_binary(unsigned long n)
+{
+	int r;
+	r = n % 2;
+	if (n >= 2) {
+		to_binary(n / 2);
+	}
+	putchar(r == 0 ? '0' : '1');
+	return;
+}
