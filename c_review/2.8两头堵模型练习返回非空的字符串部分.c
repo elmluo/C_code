@@ -18,19 +18,18 @@ int trimSpace(char *inbuf, char *outbuf)
 	}
 	int i = 0;
 	int j = strlen(inbuf) -1;
-	int len = 0;
-	while(isspace(inbuf[i]) == ' ' && i < len) 
+	while(isspace(inbuf[i]) && i < strlen(inbuf)) 
 	{
 	    i++;
 	}
-	while(isspace(inbuf[j] == ' ' && i < j)) 
+	while(isspace(inbuf[j] && i < j)) 
 	{
 		j--;
 	}
+	int len = 0;
 	len = j - i + 1;
 	strncpy(outbuf, inbuf + i, len);
 	outbuf[len] = '\0';
-
 	return 0;
 }
 
