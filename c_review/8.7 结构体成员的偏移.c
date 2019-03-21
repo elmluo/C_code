@@ -36,7 +36,7 @@ int main(void)
 	long age_off = (long)(&(p->age)) - (long)p;
 
 	printf("id_off: %ld, name_off:%ld, age_off:%ld\n", id_offsize, name_offsize, age_offsize);
-	printf("age_off : %d\n", age_off);
+	printf("age_off : %ld\n", age_off);
 
 	return 0;
 }
