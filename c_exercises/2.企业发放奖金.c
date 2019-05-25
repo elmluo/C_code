@@ -15,6 +15,6 @@
 
 int main(int argc, char const *argv[])
 {
-	const double money[MAX_LEN]
+	const double money[MAX_LEN] = {10, 20, 40, 60, 100}
 	return 0;
 }
