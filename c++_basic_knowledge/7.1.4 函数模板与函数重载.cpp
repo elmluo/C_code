@@ -1,47 +1,36 @@
 #include <iostream>
 using namespace std;
 
-
-/**
- * 升序排列
- * @param a   [description]
- * @param len [description]
- */
-template <typename T>
-void sort(T &a, len) 
-{
-	for (int i = 0; i < len; ++i)
-	{
-		for (int j = i + 1; j < len; ++j)
-		{
-			if (a[i] < a[j])
-			{
-				T temp;
-				temp = a[i];
-				a[i] = a[j];
-				a[j] = temp;
-			}
-
-		}
-
-	}	
-}
-
 template <class T>
-void print(&arr, len) {
-	for (int i = 0; i < len; ++i)
-	{
-		cout << arr[i] << endl;
-	}
+void myswap(T &a, T &b)
+{
+	T t;
+	t = a;
+	a = b;
+	b = t;
+	cout << "myswap 函数模板do" << endl;
 }
 
-int main(void)
+void myswap(char &a , int &b)
 {
-	int arr[10] = {22,2,4,55,6,6,7,9};
-	int len = strlen(arr)/strlen(arr[0]);
+	int t;
+	t = a;
+	a = b;
+	b = t;
+	cout << "myswap 普通函数do" << endl;
+}
 
-	sort<>(arr, len);
-	print<>(arr, len);
+int main()
+{
+	char cData = 'a';
+	int iData = 2;
+	myswap(cData, iData);
+	// myswap(iData, cData);
+	//=> 普通函数会进行，隐式数据类型转化
+	
 
-	return 0
+	// myswap<int>(cData, iData);
+	//=> 函数模板不提供隐式的数据类型转化 必须是严格的匹配
+	
+	return 0;
 }
