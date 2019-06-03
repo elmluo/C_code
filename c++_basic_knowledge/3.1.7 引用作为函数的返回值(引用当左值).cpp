@@ -11,6 +11,8 @@
 #include <iostream>
 using namespace std;
 
+// 函数当左值
+// 返回变量的值
 int getA1()
 {
 	int a;
@@ -18,6 +20,7 @@ int getA1()
 	return a;
 }
 
+// 返回变量本身
 int& getA2()
 {
 	int a;
@@ -30,6 +33,9 @@ int main(int argc, char const *argv[])
 	int a1 = 0;
 	int a2 = 0;
 
+	/*
+	函数当右值
+	 */
 	// 值拷贝
 	a1 = getA1();
 
@@ -42,6 +48,14 @@ int main(int argc, char const *argv[])
 	cout << "a1 = " << a1 << endl;
 	cout << "a2 = " << a2 << endl;
 	cout << "a3 = " << a3 << endl;
-	
+
+	/*
+	函数当左值
+	 */
+	// getA1() = 100;	// error
+	getA2() = 100	// 函数返回值是一个引用，并且当左值
+	a2 = getA2();
+	cout << "a2 = " << a2 << endl;
+
 	return 0;
 }
